@@ -3,7 +3,7 @@ package lexer
 import (
 	"testing"
 
-	"github.com/haapjari/books/writing-an-interpreter-in-go/interpreter/token"
+	"github.com/haapjari/books/writing-an-interpreter-in-go/interpreter/pkg/token"
 
 	"github.com/stretchr/testify/assert"
 )
@@ -26,7 +26,7 @@ func TestNextToken(t *testing.T) {
 		{token.EOF, ""},
 	}
 
-	l := new(input)
+	l := New(input)
 
 	for i, tt := range tests {
 		tok := l.NextToken()
