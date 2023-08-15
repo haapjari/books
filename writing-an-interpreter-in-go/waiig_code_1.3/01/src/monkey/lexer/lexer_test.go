@@ -68,6 +68,7 @@ if (5 < 10) {
 		{token.IDENT, "ten"},
 		{token.RPAREN, ")"},
 		{token.SEMICOLON, ";"},
+
 		{token.BANG, "!"},
 		{token.MINUS, "-"},
 		{token.SLASH, "/"},
@@ -77,9 +78,12 @@ if (5 < 10) {
 		{token.INT, "5"},
 		{token.LT, "<"},
 		{token.INT, "10"},
+		{token.SEMICOLON, ";"}, // I'm assuming the lexer will interpret ">" as the start of the next token sequence.
+		{token.INT, "10"},
 		{token.GT, ">"},
 		{token.INT, "5"},
 		{token.SEMICOLON, ";"},
+
 		{token.IF, "if"},
 		{token.LPAREN, "("},
 		{token.INT, "5"},
